@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 168137,
+      "balance": 0,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 101805,
+      "balance": 33333435105,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -74,6 +74,17 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "i-jxK3cP6",
+      "uuid": "161ce266-d55a-4d52-9e22-8c78055d6c35",
+      "firstName": "yingjie",
+      "lastName": "guan",
+      "username": "yingjie",
+      "password": "$2a$10$UGP8DPh4WoplJqq6X67oneKHIdxw1xhqRpOkahGhJqvw5Mquufmfq",
+      "balance": 0,
+      "createdAt": "2021-05-27T10:10:18.343Z",
+      "modifiedAt": "2021-05-27T10:10:18.343Z"
     }
   ],
   "contacts": [
@@ -253,6 +264,17 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
+    },
+    {
+      "id": "uBi9ER7TI",
+      "uuid": "3f10548c-b238-467e-87dd-06a24e78ae51",
+      "userId": "i-jxK3cP6",
+      "bankName": "11333",
+      "accountNumber": "1111111wd",
+      "routingNumber": "1111111wd",
+      "isDeleted": false,
+      "createdAt": "2021-05-27T10:10:37.134Z",
+      "modifiedAt": "2021-05-27T10:10:37.134Z"
     }
   ],
   "transactions": [
@@ -9855,6 +9877,18 @@
       "requestResolvedAt": "",
       "createdAt": "2019-06-27T22:24:04.794Z",
       "modifiedAt": "2020-05-21T04:58:44.494Z"
+    },
+    {
+      "id": "Jrgyhb2pd",
+      "uuid": "5d8cfbd0-9afd-47b5-b3e4-07b87fe2734e",
+      "amount": 33333333300,
+      "description": "333",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2021-05-27T09:53:55.755Z",
+      "modifiedAt": "2021-05-27T09:53:55.755Z"
     }
   ],
   "likes": [
@@ -10431,6 +10465,16 @@
       "isRead": false,
       "createdAt": "2019-10-19T20:50:49.292Z",
       "modifiedAt": "2020-05-21T21:00:50.192Z"
+    },
+    {
+      "id": "s2HBXr9Zx1",
+      "uuid": "e9d20aee-fa44-4819-b23b-cbd61850d32a",
+      "userId": "qywYp6hS0U",
+      "transactionId": "Jrgyhb2pd",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2021-05-27T09:53:55.771Z",
+      "modifiedAt": "2021-05-27T09:53:55.771Z"
     }
   ],
   "banktransfers": [
@@ -10983,6 +11027,16 @@
       "transactionId": "jtdpSmWcsJxk",
       "createdAt": "2019-10-10T05:09:20.517Z",
       "modifiedAt": "2020-05-21T12:24:00.749Z"
+    },
+    {
+      "id": "oYQXHWAc7h",
+      "uuid": "2ec388d2-d690-4775-bf91-013f20e67fb4",
+      "userId": "t45AiwidW",
+      "amount": 33333165163,
+      "transactionId": "Jrgyhb2pd",
+      "type": "withdrawal",
+      "createdAt": "2021-05-27T09:53:55.759Z",
+      "modifiedAt": "2021-05-27T09:53:55.759Z"
     }
   ]
 }
