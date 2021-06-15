@@ -4,6 +4,7 @@ const { result } = require("lodash");
 
 describe("new transaction", function () {
   const TransactionNumber = Math.random() * 100;
+  const input = Math.floor(TransactionNumber);
   context("new request transaction", function () {
     //登录
     it("login success", function () {
@@ -27,31 +28,27 @@ describe("new transaction", function () {
       cy.get("button[type=submit]").click();
       cy.get("[data-test=nav-top-new-transaction]").click();
       cy.get("[data-test=user-list-item-bDjUb4ir5O]").click();
-      cy.get("#amount").type(TransactionNumber);
+      cy.get("#amount").type(input);
       cy.get("#transaction-create-description-input").type(
-        "cypress daily test,the number is" + " " + TransactionNumber
+        "cypress daily test,the number is" + " " + input
       );
       cy.get("button[data-test=transaction-create-submit-request]").click();
       cy.get("[data-test=new-transaction-create-another-transaction]").click();
     });
-    //assert transaction is success
+    //test login api
     it("assert transaction is success transaction", function () {
       cy.request("POST", "http://localhost:3001/login", {
         username: "Katharina_Bernier",
         password: "s3cret",
         type: "LOGIN",
       });
-
+      //test transactions api,assert the response i
       cy.request({
         method: "GET",
         url: "http://localhost:3001/transactions",
       }).then((response) => {
         expect(response).property("status").to.equal(200);
-        expect(response)
-          .property(body)
-          .property(results)[0]
-          .property(amount)
-          .to.equal(TransactionNumber);
+        expect(response.body.results[0].amount).to.equal(input * 100);
       });
       // cy.get("[data-test=sidenav-home]").click();
 
