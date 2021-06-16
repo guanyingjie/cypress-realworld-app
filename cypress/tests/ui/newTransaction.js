@@ -1,30 +1,24 @@
-const { cy } = require("date-fns/locale");
 const { body } = require("express-validator");
 const { Context } = require("express-validator/src/context");
 const { result } = require("lodash");
-import "cypress/support/commands.js/";
-// const customCommands = require("cypress/support/commands.js");
 
 describe("new transaction", function () {
-  beforeEach(function () {
-    cy.login();
-  });
   const TransactionNumber = Math.random() * 100;
   const input = Math.floor(TransactionNumber);
   context("new request transaction", function () {
     //登录
-    // it("login success", function () {
-    //   cy.visit("/signin");
-    // });
+    it("login success", function () {
+      cy.visit("/signin");
+    });
     //enter correct username & password
-    // it("enter username & password", function () {
-    //   cy.get("input[name=username]").type("Katharina_Bernier");
-    //   cy.get("input[name=password]").type("s3cret");
-    //   cy.get("input[name=remember]").click();
-    //   cy.get("button[type=submit]").click();
-    //   //assert  login or not
-    //   cy.url().should("equal", "http://localhost:3000/");
-    // });
+    it("enter username & password", function () {
+      cy.get("input[name=username]").type("Katharina_Bernier");
+      cy.get("input[name=password]").type("s3cret");
+      cy.get("input[name=remember]").click();
+      cy.get("button[type=submit]").click();
+      //assert  login or not
+      cy.url().should("equal", "http://localhost:3000/");
+    });
     // new request transaction
     it("new request transaction", function () {
       cy.get("[data-test=sidenav-signout]").click();

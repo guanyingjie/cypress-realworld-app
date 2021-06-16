@@ -23,18 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... }
-Cypress.Commands.add("login", (options = {}) => {
-  const accountTypes = {
-    password: "s3cret",
-    remember: true,
-    type: "LOGIN",
-    username: "Katharina_Bernier",
-  };
-  cy.request({
-    url: "http://localhost:3001/login",
-    method: "POST",
-    form: true,
-    body: accountTypes,
+Cypress.Commands.add("login", (name, password) => {
+  it("login success", function () {
+    cy.visit("/signin");
   });
-  cy.visit("/");
+  //enter correct username & password
+  it("enter username & password", function () {
+    cy.get("input[name=username]").type(name);
+    cy.get("input[name=password]").type(password);
+    cy.get("input[name=remember]").click();
+    cy.get("button[type=submit]").click();
+    //assert  login or not
+    cy.url().should("equal", "http://localhost:3000/");
+    cy.getCookies();
+  });
 });
