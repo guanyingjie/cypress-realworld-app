@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 135837,
+      "balance": 168137,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 134105,
+      "balance": 101805,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -253,28 +253,6 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
-    },
-    {
-      "id": "9Eo_t6LRW",
-      "uuid": "d8ad6f9c-7b31-4690-8411-0cb746a474f5",
-      "userId": "t45AiwidW",
-      "bankName": "yingjie",
-      "accountNumber": "1111111wd",
-      "routingNumber": "1111111wd",
-      "isDeleted": false,
-      "createdAt": "2021-06-16T09:40:26.387Z",
-      "modifiedAt": "2021-06-16T09:40:26.387Z"
-    },
-    {
-      "id": "BpDkoWFoX",
-      "uuid": "22af3e88-e0aa-4705-ad8e-d80cc4a465ec",
-      "userId": "t45AiwidW",
-      "bankName": "33232323",
-      "accountNumber": "1111111wd",
-      "routingNumber": "1111111wd",
-      "isDeleted": false,
-      "createdAt": "2021-06-16T09:40:33.135Z",
-      "modifiedAt": "2021-06-16T09:40:33.135Z"
     }
   ],
   "transactions": [
@@ -9879,55 +9857,95 @@
       "modifiedAt": "2020-05-21T04:58:44.494Z"
     },
     {
-      "id": "JbmPoUIj0",
-      "uuid": "e9e702b4-6ad1-45c1-9104-9d316d238bc9",
-      "amount": 900,
-      "description": "cypress daily test,the number is 9",
+      "id": "5TX9fFYyl",
+      "uuid": "0a79cb2e-d5ac-43bf-a441-98d9ec261345",
+      "amount": 6500,
+      "description": "cypress daily test,the number is 65.08333297491195",
       "receiverId": "bDjUb4ir5O",
       "senderId": "t45AiwidW",
       "privacyLevel": "public",
       "status": "pending",
       "requestStatus": "pending",
-      "createdAt": "2021-06-16T09:35:40.061Z",
-      "modifiedAt": "2021-06-16T09:35:40.061Z"
+      "createdAt": "2021-06-10T09:48:30.262Z",
+      "modifiedAt": "2021-06-10T09:48:30.262Z"
     },
     {
-      "id": "KsMklS0Eb",
-      "uuid": "d0d070d6-9dc6-455a-9dac-b322504cdb49",
-      "amount": 32300,
-      "description": "323",
-      "receiverId": "qywYp6hS0U",
-      "senderId": "t45AiwidW",
-      "privacyLevel": "public",
-      "status": "complete",
-      "createdAt": "2021-06-16T09:52:01.237Z",
-      "modifiedAt": "2021-06-16T09:52:01.237Z"
-    },
-    {
-      "id": "eQajsDq_7",
-      "uuid": "f0961098-d24a-49c9-bcf7-7c4f53aa9c5b",
-      "amount": 7700,
-      "description": "cypress daily test,the number is 77",
+      "id": "tXGssDLPN",
+      "uuid": "2a3d26b3-c4be-48a3-8b06-0ef1bf331f6d",
+      "amount": 3800,
+      "description": "cypress daily test,the number is 38.66400611494958",
       "receiverId": "bDjUb4ir5O",
       "senderId": "t45AiwidW",
       "privacyLevel": "public",
       "status": "pending",
       "requestStatus": "pending",
-      "createdAt": "2021-06-17T02:21:20.338Z",
-      "modifiedAt": "2021-06-17T02:21:20.338Z"
+      "createdAt": "2021-06-10T09:50:06.489Z",
+      "modifiedAt": "2021-06-10T09:50:06.489Z"
     },
     {
-      "id": "OzmL3cxPa",
-      "uuid": "16254b3e-9bf8-4694-b844-4d81fdd7b1da",
-      "amount": 2700,
-      "description": "cypress daily test,the number is 27",
+      "id": "hJWmos5D3",
+      "uuid": "7583b304-196e-4122-953a-56265422ac42",
+      "amount": 4000,
+      "description": "cypress daily test,the number is 40.24209581351572",
       "receiverId": "bDjUb4ir5O",
       "senderId": "t45AiwidW",
       "privacyLevel": "public",
       "status": "pending",
       "requestStatus": "pending",
-      "createdAt": "2021-06-17T02:25:17.028Z",
-      "modifiedAt": "2021-06-17T02:25:17.028Z"
+      "createdAt": "2021-06-15T09:26:36.694Z",
+      "modifiedAt": "2021-06-15T09:26:36.694Z"
+    },
+    {
+      "id": "wNibCeuuH",
+      "uuid": "7ded0d44-0d61-4c23-943d-0718d5a97058",
+      "amount": 1200,
+      "description": "cypress daily test,the number is 12.116623109769463",
+      "receiverId": "bDjUb4ir5O",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2021-06-15T09:34:11.382Z",
+      "modifiedAt": "2021-06-15T09:34:11.382Z"
+    },
+    {
+      "id": "NuZfkoxZ5",
+      "uuid": "606b5be5-dd8e-465e-8098-612420ed3fcd",
+      "amount": 3200,
+      "description": "cypress daily test,the number is 32.36500615632756",
+      "receiverId": "bDjUb4ir5O",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2021-06-15T09:41:21.916Z",
+      "modifiedAt": "2021-06-15T09:41:21.916Z"
+    },
+    {
+      "id": "suu_iIsSo",
+      "uuid": "dfbcb69e-db90-46fd-923b-9b6b7cfddcfc",
+      "amount": 9100,
+      "description": "cypress daily test,the number is 91.95964205882052",
+      "receiverId": "bDjUb4ir5O",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2021-06-15T09:42:39.155Z",
+      "modifiedAt": "2021-06-15T09:42:39.155Z"
+    },
+    {
+      "id": "0bqZMOjEl",
+      "uuid": "d0724ed0-0e59-4bff-8666-df73bb8e8d75",
+      "amount": 5600,
+      "description": "cypress daily test,the number is 56",
+      "receiverId": "bDjUb4ir5O",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2021-06-15T09:43:46.128Z",
+      "modifiedAt": "2021-06-15T09:43:46.128Z"
     }
   ],
   "likes": [
@@ -10506,44 +10524,74 @@
       "modifiedAt": "2020-05-21T21:00:50.192Z"
     },
     {
-      "id": "NODwUx02v",
-      "uuid": "dea34f70-6b86-42a8-8770-d0bf310d0eb7",
+      "id": "wXM-7_EApp",
+      "uuid": "017bb3d4-9ef6-4236-b8f8-450d84c8dbcf",
       "userId": "bDjUb4ir5O",
-      "transactionId": "JbmPoUIj0",
+      "transactionId": "5TX9fFYyl",
       "status": "requested",
       "isRead": false,
-      "createdAt": "2021-06-16T09:35:40.064Z",
-      "modifiedAt": "2021-06-16T09:35:40.064Z"
+      "createdAt": "2021-06-10T09:48:30.267Z",
+      "modifiedAt": "2021-06-10T09:48:30.267Z"
     },
     {
-      "id": "SkmTjw5xgW",
-      "uuid": "0b4904fa-ba92-4ff5-ae00-3d8a29da0e60",
-      "userId": "qywYp6hS0U",
-      "transactionId": "KsMklS0Eb",
-      "status": "received",
-      "isRead": false,
-      "createdAt": "2021-06-16T09:52:01.280Z",
-      "modifiedAt": "2021-06-16T09:52:01.280Z"
-    },
-    {
-      "id": "vSraa8e1sn",
-      "uuid": "d90d67e1-b09b-4171-b1a8-1e076467c159",
+      "id": "J4xhpWizXD",
+      "uuid": "3288877d-9b98-4e79-8673-4ac27bfac0d2",
       "userId": "bDjUb4ir5O",
-      "transactionId": "eQajsDq_7",
+      "transactionId": "tXGssDLPN",
       "status": "requested",
       "isRead": false,
-      "createdAt": "2021-06-17T02:21:20.344Z",
-      "modifiedAt": "2021-06-17T02:21:20.344Z"
+      "createdAt": "2021-06-10T09:50:06.491Z",
+      "modifiedAt": "2021-06-10T09:50:06.491Z"
     },
     {
-      "id": "7S3s30OHQ_",
-      "uuid": "0a31aac9-f04e-439f-af4f-46d047110ad3",
+      "id": "PMoW4oSjvf",
+      "uuid": "d3327641-dd21-4320-9e07-e67c11d6af73",
       "userId": "bDjUb4ir5O",
-      "transactionId": "OzmL3cxPa",
+      "transactionId": "hJWmos5D3",
       "status": "requested",
       "isRead": false,
-      "createdAt": "2021-06-17T02:25:17.031Z",
-      "modifiedAt": "2021-06-17T02:25:17.031Z"
+      "createdAt": "2021-06-15T09:26:36.705Z",
+      "modifiedAt": "2021-06-15T09:26:36.705Z"
+    },
+    {
+      "id": "U1as49euI1",
+      "uuid": "7186a304-96af-4521-8a25-87f46b90ee2f",
+      "userId": "bDjUb4ir5O",
+      "transactionId": "wNibCeuuH",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2021-06-15T09:34:11.386Z",
+      "modifiedAt": "2021-06-15T09:34:11.386Z"
+    },
+    {
+      "id": "0U6GkY6QWG",
+      "uuid": "1798ef54-4919-470f-8352-f22638cb2fee",
+      "userId": "bDjUb4ir5O",
+      "transactionId": "NuZfkoxZ5",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2021-06-15T09:41:21.920Z",
+      "modifiedAt": "2021-06-15T09:41:21.920Z"
+    },
+    {
+      "id": "Mps8XVKJIJ",
+      "uuid": "df89dd7c-3fde-4d0b-b9c4-888367334863",
+      "userId": "bDjUb4ir5O",
+      "transactionId": "suu_iIsSo",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2021-06-15T09:42:39.158Z",
+      "modifiedAt": "2021-06-15T09:42:39.158Z"
+    },
+    {
+      "id": "jyJxhmVX7Z",
+      "uuid": "42a6c262-bea1-41ad-8b8d-4cdfcab1b684",
+      "userId": "bDjUb4ir5O",
+      "transactionId": "0bqZMOjEl",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2021-06-15T09:43:46.131Z",
+      "modifiedAt": "2021-06-15T09:43:46.131Z"
     }
   ],
   "banktransfers": [
