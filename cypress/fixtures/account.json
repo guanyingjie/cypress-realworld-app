@@ -1,0 +1,23 @@
+[
+  {
+    "transactionType": "payment",
+    "amount": "111",
+    "description": "test",
+    "senderId": "t45AiwidW",
+    "receiverId": "bDjUb4ir5O"
+  },
+  {
+    "transactionType": "payment",
+    "amount": "111",
+    "description": "test",
+    "senderId": "t45AiwidW",
+    "receiverId": "bDjUb4ir5O"
+  },
+  {
+    "transactionType": "request",
+    "amount": "44",
+    "description": "444",
+    "senderId": "t45AiwidW",
+    "receiverId": "qywYp6hS0U"
+  }
+]
