@@ -308,6 +308,17 @@
       "isDeleted": false,
       "createdAt": "2021-06-18T09:25:25.895Z",
       "modifiedAt": "2021-06-18T09:25:25.895Z"
+    },
+    {
+      "id": "syjcg2tYn",
+      "uuid": "821ac30d-6dce-4b7a-9383-2413360623f0",
+      "userId": "t45AiwidW",
+      "bankName": "yingjie",
+      "accountNumber": "1111111wd",
+      "routingNumber": "1111111wd",
+      "isDeleted": false,
+      "createdAt": "2021-06-21T09:46:00.710Z",
+      "modifiedAt": "2021-06-21T09:46:00.710Z"
     }
   ],
   "transactions": [
@@ -10011,6 +10022,19 @@
       "requestStatus": "pending",
       "createdAt": "2021-06-18T09:56:54.543Z",
       "modifiedAt": "2021-06-18T09:56:54.543Z"
+    },
+    {
+      "id": "q1pN9yz_f",
+      "uuid": "68b04d24-5bcd-4dcc-8c33-5ca4b3d01de9",
+      "amount": 600,
+      "description": "cypress daily test,the number is 6",
+      "receiverId": "bDjUb4ir5O",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2021-06-22T08:15:34.025Z",
+      "modifiedAt": "2021-06-22T08:15:34.025Z"
     }
   ],
   "likes": [
@@ -10667,6 +10691,16 @@
       "isRead": false,
       "createdAt": "2021-06-18T09:56:54.556Z",
       "modifiedAt": "2021-06-18T09:56:54.556Z"
+    },
+    {
+      "id": "bEQZrCuiSF",
+      "uuid": "0422cb00-b67d-43a1-ab65-5d9789607249",
+      "userId": "bDjUb4ir5O",
+      "transactionId": "q1pN9yz_f",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2021-06-22T08:15:34.037Z",
+      "modifiedAt": "2021-06-22T08:15:34.037Z"
     }
   ],
   "banktransfers": [

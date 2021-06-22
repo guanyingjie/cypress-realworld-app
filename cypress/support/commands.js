@@ -24,17 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... }
 Cypress.Commands.add("login", (name, password) => {
-  it("login success", function () {
-    cy.visit("/signin");
-  });
+  cy.visit("/signin");
   //enter correct username & password
-  it("enter username & password", function () {
-    cy.get("input[name=username]").type(name);
-    cy.get("input[name=password]").type(password);
-    cy.get("input[name=remember]").click();
-    cy.get("button[type=submit]").click();
-    //assert  login or not
-    cy.url().should("equal", "http://localhost:3000/");
-    cy.getCookies();
-  });
+  cy.get("input[name=username]").type(name);
+  cy.get("input[name=password]").type(password);
+  cy.get("input[name=remember]").click();
+  cy.get("button[type=submit]").click();
+  //assert  login or not
+  cy.url().should("equal", "http://localhost:3000/");
+  cy.getCookies();
 });

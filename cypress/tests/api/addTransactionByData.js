@@ -1,6 +1,6 @@
+const { cy } = require("date-fns/locale");
+
 describe("new transaction", function () {
-  const TransactionNumber = Math.random() * 100;
-  const input = Math.floor(TransactionNumber);
   context("new request transaction", function () {
     //登录
     it("login success", function () {
@@ -14,6 +14,11 @@ describe("new transaction", function () {
       cy.get("button[type=submit]").click();
       //assert  login or not
       cy.url().should("equal", "http://localhost:3000/");
+    });
+    //use fixture to send api
+    it("use fixture to send api", function () {
+      cy.fixture("account").as(accountJson);
+      cy.request("POST", "http://localhost:3001/graphql", {});
     });
   });
 });
