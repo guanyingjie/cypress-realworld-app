@@ -1,24 +1,36 @@
 const { cy } = require("date-fns/locale");
+const { Context } = require("express-validator/src/context");
+
+const { requestBody } = require("../../fixtures/requestBody.json");
+import "../../support/commands.js";
 
 describe("new transaction", function () {
   context("new request transaction", function () {
     //登录
     it("login success", function () {
-      cy.visit("/signin");
-    });
-    //enter correct username & password
-    it("enter username & password", function () {
+      // cy.login("Katharina_Bernier", "s3cret");
+      cy.get("[data-test=sidenav-signout]").click();
       cy.get("input[name=username]").type("Katharina_Bernier");
       cy.get("input[name=password]").type("s3cret");
       cy.get("input[name=remember]").click();
       cy.get("button[type=submit]").click();
-      //assert  login or not
-      cy.url().should("equal", "http://localhost:3000/");
     });
+
     //use fixture to send api
     it("use fixture to send api", function () {
-      cy.fixture("account").as(accountJson);
-      cy.request("POST", "http://localhost:3001/graphql", {});
+      cy.fixture("requestBody").then((requestBody) => {
+        //判断是否为数组
+        expect(requestBody).to.be.an("array").to.have.have.length(3);
+        requestBody.forEach((body) => {
+          cy.request({
+            Method: "POST",
+            URL: "http://localhost:3001/graphql",
+            body: body,
+          }).then((response) => {
+            expect(response.status).to.be.eq(200);
+          });
+        });
+      });
     });
   });
 });
