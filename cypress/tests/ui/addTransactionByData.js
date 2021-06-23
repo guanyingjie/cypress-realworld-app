@@ -1,32 +1,26 @@
-const { cy } = require("date-fns/locale");
+const { body } = require("express-validator");
 const { Context } = require("express-validator/src/context");
 const { requestBody } = require("../../fixtures/requestBody.json");
-const { login } = require("../../support/commands.js");
+
+const { result } = require("lodash");
 import "../../support/commands.js";
 
 describe("new transaction", function () {
   context("new request transaction", function () {
-    //登录
-    it("login success", function () {
+    beforeEach(() => {
       cy.login("Katharina_Bernier", "s3cret");
-      cy.get("[data-test=sidenav-signout]").click();
-      cy.get("input[name=username]").type("Katharina_Bernier");
-      cy.get("input[name=password]").type("s3cret");
-      cy.get("input[name=remember]").click();
-      cy.get("button[type=submit]").click();
     });
+    // new request transaction
 
-    //use fixture to send api
     it("use fixture to send api", function () {
+      // cy.login("Katharina_Bernier", "s3cret");
       cy.fixture("requestBody").then((requestBody) => {
         //判断是否为数组
         expect(requestBody).to.be.an("array").to.have.have.length(3);
         requestBody.forEach((body) => {
-          cy.request({
-            Method: "POST",
-            URL: "http://localhost:3001/graphql",
-            body: body,
-          }).then((response) => {
+          console.log(body);
+
+          cy.request("POST", "http://localhost:3001/transactions", body).then((response) => {
             expect(response.status).to.be.eq(200);
           });
         });

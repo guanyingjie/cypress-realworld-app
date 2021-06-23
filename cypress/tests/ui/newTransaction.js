@@ -36,19 +36,5 @@ describe("new transaction", function () {
         expect(response.body.results[0].amount).to.equal(input * 100);
       });
     });
-    it("use fixture to send api", function () {
-      // cy.login("Katharina_Bernier", "s3cret");
-      cy.fixture("requestBody").then((requestBody) => {
-        //判断是否为数组
-        expect(requestBody).to.be.an("array").to.have.have.length(3);
-        requestBody.forEach((body) => {
-          console.log(body);
-
-          cy.request("POST", "http://localhost:3001/transactions", body).then((response) => {
-            expect(response.status).to.be.eq(200);
-          });
-        });
-      });
-    });
   });
 });
