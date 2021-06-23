@@ -33,5 +33,5 @@ Cypress.Commands.add("login", (name, password) => {
   cy.get("button[type=submit]").click();
   //assert  login or not
   cy.url().should("equal", "http://localhost:3000/");
-  cy.getCookies();
+  cy.getCookies("auth_keys").should("exist");
 });

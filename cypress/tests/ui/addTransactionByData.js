@@ -1,14 +1,14 @@
 const { cy } = require("date-fns/locale");
 const { Context } = require("express-validator/src/context");
-
 const { requestBody } = require("../../fixtures/requestBody.json");
+const { login } = require("../../support/commands.js");
 import "../../support/commands.js";
 
 describe("new transaction", function () {
   context("new request transaction", function () {
     //登录
     it("login success", function () {
-      // cy.login("Katharina_Bernier", "s3cret");
+      cy.login("Katharina_Bernier", "s3cret");
       cy.get("[data-test=sidenav-signout]").click();
       cy.get("input[name=username]").type("Katharina_Bernier");
       cy.get("input[name=password]").type("s3cret");
